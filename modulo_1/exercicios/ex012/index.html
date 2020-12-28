@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos no HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>    
+    <h2>Este vídeo está hospedado no meu próprio servidor.</h2>
+    <p>Esta forma a baixo, não é a melhor opção. Desta maneira, um desses formatos pode não ser compatível com o navegador do usuário e o vídeo pode não carregar.</p>
+    <video src="midia/meu-video.mp4"width=600 controls>Vídeo em Mp4</video><br>
+    <video src="midia/meu-video.m4v" width="600" controls>Vídeo em M4v</video><br>
+    <video src="midia/meu-video.webm"width=600 controls>Vídeo em webm</video><br>
+    <video src="midia/meu-video.ogv" width="600" controls>Vídeo em Ogv</video>
+
+    <p>Desta forma a seguir é o recomendado a se fazer, pois o video seguira uma herarquia a qual formato o navegador é compatível.</p>
+    <video width="600" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/m4v">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não é compatível com essa midia.</p>
+    </video>
+
+    <h2>Inserindo vídeos hospedados fora do meu servidor</h2>
+    <h3>Youtube</h3>
+    <iframe width="600" height="408" src="https://www.youtube.com/embed/DIraePpIAog" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h3>Vimeo</h3>
+    <iframe src="https://player.vimeo.com/video/144728589?portrait=0" width="600" height="408" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    
+
+</body>
+</html>

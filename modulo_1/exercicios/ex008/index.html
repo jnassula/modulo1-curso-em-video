@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+
+    <h2>Negrito/Destaque</h2>
+    <h3>Negrito</h3>
+    <p>Eu posso escrever um texto e coloca-lo em <b>negrito!</b>(não semântica)</p>
+    <h3>Destaque</h3>
+    <p>Eu posso escrever um texto e também coloca-lo em <strong>destaque!</strong>(semântica)</p>
+
+    <h2>Itálico/Ênfase</h2>
+    <h3>Itálico</h3>
+    <p>Eu posso escreve um texto e deix-lo <i>em itálico</i> uma parte que eu queira!(não semântica)</p>
+    <h3>Ênfase</h3>
+    <p>Eu posso também deixar outra parte que eu quiera com <em> ênfase!</em>(semântica)</p>
+
+    <h2>Texto Marcado</h2>
+    <p>Quando você quiser, você pode marcar um texto como se fosse uma <mark>marca texto.</mark></p>
+
+    <h2>Texto Deletado</h2>
+    <p>Uma outra maneira de formatação é o <del>texto deletado!</del></p>
+
+    <h2>Texto Inserido</h2>
+    <p>E para inserir um texto, usa-se a <ins>tag de inserção!</ins></p>
+
+    <h2>Textos Sobrescritos e Subscrito</h2>
+    <h3>Sobrescritos</h3>
+    <p>Uma maneira de sobrescrever um elemento no texto: X<sup>2</sup>+10=110</p>
+    <p>E uma maneira de subscrever um elemento no texto: H<sub>2</sub>O</p>
+
+    <h2>Trechos de códigos</h2>
+    <p>É possível usar uma tag (code) para formatar de em forma de um trecho de código:
+        <code>
+            nome = input('Digite um nome:')
+
+            if nome == 'José':
+                print('Olá José!')
+            else:
+                print(f'Olá {nome}, eu não te conheço!')
+        </code> 
+    </p>
+    <p>Poré essa não é exatamente a forma correta, precisamos de outra tag (pre) para que o trecho fique melhor visto!
+        <pre>
+            <code>
+    nome = input('Digite um nome:')
+
+    if nome == 'José':
+        print('Olá José!')
+    else:
+        print(f'Olá {nome}, eu não te conheço!')
+            </code> 
+        </pre>
+    </p>
+
+    <h2>Citações</h2>
+    <p>Temos uma tag(q) específica para citações!
+        <q>Não espere por uma crise para descobrir o que é importante em sua vida.</q> <br>
+        Outra forma é com a tag(blockquote), dessa forma é formtado um parágrafo para a citação.
+        <blockquote>Não espere por uma crise para descobrir o que é importante em sua vida.</blockquote>
+    </p>
+
+    <h2>Abreviações</h2>
+    <p>Podemos também fazer abreviações usando a tag abbr. <br>
+        Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> para criar sites.
+    </p>
+
+</body>
+</html>
